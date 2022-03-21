@@ -1,24 +1,118 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/svg/hero.svg" rel="icon" />
     <title>Bilal Bentoumi</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+
 <div id="app" class="app">
-    <div class="main-wrapper">
-        <div class="header">
-            <div class="logo">
-                <div class="icon">B</div>
-                <h2><strong>Bilal</strong> Bentoumi</h2>
-            </div>
+
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="assets/svg/logo.svg" />
+            </a>
+            <nav class="nav">
+                <div class="toggle">
+                    <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="23" height="3" rx="1.5" fill="black"/>
+                        <rect y="7" width="23" height="3" rx="1.5" fill="black"/>
+                        <rect y="14" width="23" height="3" rx="1.5" fill="black"/>
+                    </svg>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="left">
+
+                    <div class="intro">
+                        <span>> I'm</span>
+                        <h1>Bilal.<br>Bentoumi</h1>
+                        <p>Hi! I’m a Full-stack Developer - building awesome user interfaces and interactive web apps</p>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="btn">
+                            <a href="">
+                                Download CV
+                                <svg width="15" height="20" viewBox="0 0 19 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.3608 11.8043L13.5313 10.3547L10.667 13.9705V0H8.33301V13.9705L5.46873 10.3547L3.63925 11.8043L9.50001 19.2013L15.3608 11.8043Z" fill="white"/>
+                                    <path d="M19 22.5618H0V24.8958H19V22.5618Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="" class="link">
+                            Portfolio
+                            <svg width="15" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="20.3402" width="28.7654" height="3" rx="1.5" transform="rotate(-45 0 20.3402)" fill="#18171C"/>
+                                <rect x="7" width="15" height="3" rx="1.5" fill="#18171C"/>
+                                <rect x="19" y="15" width="15" height="3" rx="1.5" transform="rotate(-90 19 15)" fill="#18171C"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <span>Check out my</span>
+                        <a href="https://www.linkedin.com/in/bilalbentoumi" target="_blank" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 35 35" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.14713 11.2214H1.12082C0.808982 11.2214 0.556305 11.4742 0.556305 11.786V34.3585C0.556305 34.6703 0.808982 34.923 1.12082 34.923H8.14713C8.45897 34.923 8.71164 34.6703 8.71164 34.3585V11.786C8.71164 11.4742 8.45897 11.2214 8.14713 11.2214Z" fill="inherit"/>
+                                <path d="M4.63648 0C2.0799 0 0 2.07764 0 4.6314C0 7.18629 2.0799 9.26472 4.63648 9.26472C7.19103 9.26472 9.26924 7.18618 9.26924 4.6314C9.26935 2.07764 7.19103 0 4.63648 0Z" fill="inherit"/>
+                                <path d="M26.019 10.6603C23.197 10.6603 21.1109 11.8734 19.8456 13.2519V11.7858C19.8456 11.4741 19.5929 11.2213 19.281 11.2213H12.5521C12.2403 11.2213 11.9876 11.4741 11.9876 11.7858V34.3583C11.9876 34.6702 12.2403 34.9228 12.5521 34.9228H19.5631C19.8749 34.9228 20.1276 34.6702 20.1276 34.3583V23.1902C20.1276 19.4268 21.1498 17.9606 23.7732 17.9606C26.6304 17.9606 26.8574 20.311 26.8574 23.3838V34.3584C26.8574 34.6703 27.1101 34.923 27.4219 34.923H34.4355C34.7473 34.923 35 34.6703 35 34.3584V21.977C35 16.381 33.9329 10.6603 26.019 10.6603Z" fill="inherit"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/bilalbentoumi" target="_blank" class="social-link">
+                            <svg width="28" height="28" viewBox="0 0 49 49" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.5 2.04168C18.6066 1.98179 12.9306 4.26425 8.7194 8.38743C4.50817 12.5106 2.1063 18.1371 2.04166 24.0304C2.06436 28.6878 3.56258 33.2182 6.32112 36.9708C9.07965 40.7234 12.9566 43.5053 17.395 44.9167C18.5179 45.1208 18.9262 44.4471 18.9262 43.855V40.1188C12.6787 41.4458 11.3517 37.1788 11.3517 37.1788C10.9358 35.8392 10.0516 34.6941 8.86082 33.9529C6.81916 32.6054 9.02416 32.6258 9.02416 32.6258C9.72986 32.7202 10.405 32.9731 10.9991 33.3656C11.5931 33.7581 12.0906 34.2799 12.4542 34.8921C13.0877 35.9908 14.1274 36.7967 15.3493 37.1366C16.5712 37.4764 17.8776 37.3229 18.9875 36.7092C19.1016 35.5911 19.6079 34.5496 20.4167 33.7692C15.435 33.2179 10.2083 31.3396 10.2083 22.9075C10.1638 20.708 10.9765 18.5774 12.4746 16.9663C11.7923 15.0779 11.8729 12.9979 12.6992 11.1679C12.6992 11.1679 14.5979 10.5758 18.8242 13.4138C22.503 12.4334 26.3745 12.4334 30.0533 13.4138C34.3408 10.5758 36.1783 11.1679 36.1783 11.1679C37.0046 12.9979 37.0852 15.0779 36.4029 16.9663C37.9358 18.5478 38.7926 20.6642 38.7916 22.8667C38.7916 31.3192 33.5242 33.1771 28.5833 33.7283C29.1243 34.2536 29.5422 34.8922 29.807 35.5982C30.0718 36.3043 30.1768 37.0602 30.1146 37.8117V43.8346C30.1146 44.5492 30.5229 45.1208 31.6458 44.8963C36.0717 43.4761 39.9355 40.6936 42.6855 36.9463C45.4355 33.199 46.931 28.6785 46.9583 24.0304C46.8937 18.1371 44.4918 12.5106 40.2806 8.38743C36.0693 4.26425 30.3933 1.98179 24.5 2.04168Z" fill="inherit"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="right">
+                    <img src="assets/svg/hero.svg"  alt="Bilal Bentoumi" />
+                </div>
+            </div>
+        </section>
+    </main>
+
 </div>
+
+<script>
+
+    if (CSS && 'paintWorklet' in CSS) {
+        CSS.paintWorklet.addModule('https://unpkg.com/smooth-corners')
+    }
+
+</script>
+
 </body>
 </html>
+
