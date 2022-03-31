@@ -32,7 +32,7 @@ $(document).ready(function (){
         $(`.nav-link[href="#${current}"]`).addClass('active');
 
         if (window.history.replaceState) {
-            let url = window.location.origin + window.location.pathname + '#' + current;
+            let url = window.location.href.split('#').reverse().pop() + '#' + current;
             window.history.replaceState({}, null, url);
         }
 
