@@ -108,6 +108,7 @@ html {
     color: var(--primary-color);
     letter-spacing: -3px;
     font-family: 'Glegoo', serif;
+    line-height: 65px;
 }
 
 .hero-section .intro h1 {
@@ -148,10 +149,16 @@ html {
 .hero-section .buttons .btn {
     display: inline-block;
     background: var(--primary-color);
-    mask-image: paint(smooth-corners);
-    -webkit-mask-image: paint(smooth-corners);
-    --smooth-corners: 15, 2;
+    border-radius: 10px;
     transition: 75ms;
+}
+
+@supports (-webkit-mask-image: paint(smooth-corners)){
+    .hero-section .buttons .btn {
+        --smooth-corners: 15, 2;
+        mask-image: paint(smooth-corners);
+        -webkit-mask-image: paint(smooth-corners);
+    }
 }
 
 .hero-section .buttons .btn:hover {
@@ -218,6 +225,7 @@ html {
     height: 600px;
      -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #dcc8ff;
+    padding-top: 140px;
 }
 
 .section:before {
@@ -228,6 +236,44 @@ html {
     font-weight: 800;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px var(--primary-color);
+    z-index: -1;
+}
+
+/* Portfolio */
+#portfolio {
+    -webkit-text-fill-color: unset;
+    -webkit-text-stroke: unset;
+    height: max-content;
+}
+
+#portfolio .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 30px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-cover {
+    border-radius: 15px;
+    box-shadow: 0 0 10px #0000001f;
+}
+
+.project-name {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #837f91;
 }
 
 #about:before {
@@ -286,9 +332,13 @@ html {
     .header .nav .nav-list {
         display: none;
     }
+    .hero-section .container {
+        padding-top: 100px;
+    }
     .hero-section .intro span {
         font-size: 48px !important;
         letter-spacing: -2px !important;
+        line-height: 50px;
     }
     .hero-section .intro h1 {
         font-size: 72px !important;
@@ -307,6 +357,9 @@ html {
     }
     .hero-section .right {
         display: none;
+    }
+    #portfolio .container {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
     .footer .container {
         justify-content: center;
