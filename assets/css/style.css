@@ -22,6 +22,10 @@ html {
     text-decoration: none;
 }
 
+*:focus {
+    outline: none;
+}
+
 .app {
     height: 100%;
     --primary-color: #8873ef;
@@ -31,6 +35,36 @@ html {
 .container {
     width: 80%;
     margin: auto;
+}
+
+button {
+    background: var(--primary-color-dark);
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    padding: 15px;
+    transition: 75ms;
+    border-radius: 2px;
+}
+
+button:hover {
+    background: var(--primary-color);
+}
+
+input, textarea {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    border: 1px solid #d5d6de;
+    padding: 15px 20px;
+    width: 100%;
+    transition: 75ms;
+    border-radius: 2px;
+}
+
+input:focus, textarea:focus {
+    border-color: #9c9eb1;
 }
 
 /* Header */
@@ -223,20 +257,7 @@ html {
 .section {
     position: relative;
     height: 600px;
-     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #dcc8ff;
     padding-top: 140px;
-}
-
-.section:before {
-    position: absolute;
-    top: 85px;
-    left: 0;
-    font-size: 10vw;
-    font-weight: 800;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px var(--primary-color);
-    z-index: -1;
 }
 
 /* Portfolio */
@@ -276,6 +297,37 @@ html {
     color: #837f91;
 }
 
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h2 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #837f91;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    width: 100%;
+    max-width: 700px;
+}
+
+#contact .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
 #about:before {
     content: "About";
 }
@@ -290,10 +342,6 @@ html {
 
 #portfolio:before {
     content: "Portfolio";
-}
-
-#contact:before {
-    content: "Contact";
 }
 
 /* Footer */
