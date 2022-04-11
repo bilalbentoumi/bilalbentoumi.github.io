@@ -40,4 +40,31 @@ $(document).ready(function (){
 
     $(window).scroll();
 
+    $('#contact-form').submit(function (e) {
+
+        e.preventDefault();
+
+        $('.send-button').addClass('processing').find('span').text('Sending');
+
+        $.ajax({
+            method: 'post',
+            url: 'https://script.google.com/macros/s/AKfycbwIjuvNYJ59F9ZVnY2cLS1V9EC89Geuh6sxCAbsTPbP5oFhbfXcYn6nCx4819QBTabN/exec',
+            data: {
+                to: 'bilalbentoumi@gmail.com',
+                subject: 'bilalbentoumi.me | New message',
+                content: function() {
+                    return $('#message').val();
+                }
+            },
+            success: function (data) {
+                $('#contact-form input, #contact-form textarea').val('');
+                $('.send-button').removeClass('processing').find('span').text('Send');
+            },
+            error: function (error) {
+                console.log(error)
+            }
+        });
+
+    });
+
 });

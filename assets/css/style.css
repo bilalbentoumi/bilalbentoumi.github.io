@@ -37,21 +37,6 @@ html {
     margin: auto;
 }
 
-button {
-    background: var(--primary-color-dark);
-    color: #fff;
-    font-weight: 400;
-    font-size: 14px;
-    border: none;
-    padding: 15px;
-    transition: 75ms;
-    border-radius: 2px;
-}
-
-button:hover {
-    background: var(--primary-color);
-}
-
 input, textarea {
     font-size: 14px;
     font-weight: 400;
@@ -328,6 +313,53 @@ input:focus, textarea:focus {
     margin-bottom: 20px;
 }
 
+.send-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--primary-color-dark);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    padding: 12px;
+    transition: 75ms;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background: var(--primary-color);
+}
+
+.send-button span {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.send-button svg {
+    display: none;
+    animation: spin 1.2s linear infinite;
+}
+
+.send-button svg circle {
+    opacity: 0.25;
+}
+
+.send-button svg path {
+    opacity: 0.75;
+}
+
+.send-button.processing {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.send-button.processing svg {
+    display: block;
+}
+
 #about:before {
     content: "About";
 }
@@ -364,6 +396,16 @@ input:focus, textarea:focus {
     color: #18171C;
     font-weight: 400;
     font-size: 16px;
+}
+
+/* Animations */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* XS */
