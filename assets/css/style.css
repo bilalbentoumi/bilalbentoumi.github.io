@@ -61,7 +61,8 @@ input:focus, textarea:focus {
 
 .header.active {
     box-shadow: 0 0 10px #0001;
-    background: #fff;
+    background: #fffe;
+    backdrop-filter: blur(20px);
 }
 
 .header.active .container {
