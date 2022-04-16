@@ -242,8 +242,71 @@ input:focus, textarea:focus {
 /* Section */
 .section {
     position: relative;
-    height: 600px;
-    padding-top: 140px;
+    padding-block: 80px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* Experience */
+.experience-item {
+    padding-inline-start: 20px;
+    border-left: 2px solid var(--primary-color);
+    position: relative;
+}
+
+.experience-item:not(:last-of-type) {
+    padding-block-end: 20px;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -11px;
+    top: 0;
+    background: #fff;
+    border: 2px solid var(--primary-color);
+}
+
+.experience-item .job-title {
+    line-height: 18px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+
+.experience-item .company {
+    font-size: 14px;
+    background: #e6e1ff;
+    color: var(--primary-color-dark);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.experience-item .period {
+    font-size: 14px;
+    color: #77767c;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+}
+
+.experience-item ul li {
+    padding-bottom: 10px;
 }
 
 /* Portfolio */
@@ -253,7 +316,7 @@ input:focus, textarea:focus {
     height: max-content;
 }
 
-#portfolio .container {
+#portfolio .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     gap: 30px;
@@ -283,6 +346,7 @@ input:focus, textarea:focus {
     color: #837f91;
 }
 
+/* Contact */
 #contact .container {
     display: flex;
     flex-direction: column;
@@ -302,19 +366,19 @@ input:focus, textarea:focus {
     margin-bottom: 30px;
 }
 
-#contact form {
+#contact-form {
     width: 100%;
     max-width: 700px;
 }
 
-#contact .row {
+#contact-form .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.send-button {
+#contact-form .send-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,34 +394,34 @@ input:focus, textarea:focus {
     cursor: pointer;
 }
 
-.send-button:hover {
+#contact-form .send-button:hover {
     background: var(--primary-color);
 }
 
-.send-button span {
+#contact-form .send-button span {
     font-size: inherit;
     font-weight: inherit;
 }
 
-.send-button svg {
+#contact-form .send-button svg {
     display: none;
     animation: spin 1.2s linear infinite;
 }
 
-.send-button svg circle {
+#contact-form .send-button svg circle {
     opacity: 0.25;
 }
 
-.send-button svg path {
+#contact-form .send-button svg path {
     opacity: 0.75;
 }
 
-.send-button.processing {
+#contact-form .send-button.processing {
     pointer-events: none;
     cursor: not-allowed;
 }
 
-.send-button.processing svg {
+#contact-form .send-button.processing svg {
     display: block;
 }
 
@@ -371,22 +435,6 @@ input:focus, textarea:focus {
     font-weight: 500;
     font-size: 14px;
     border-radius: 4px;
-}
-
-#about:before {
-    content: "About";
-}
-
-#experience:before {
-    content: "Experience";
-}
-
-#education:before {
-    content: "Education";
-}
-
-#portfolio:before {
-    content: "Portfolio";
 }
 
 /* Footer */
