@@ -361,6 +361,18 @@ input:focus, textarea:focus {
     display: block;
 }
 
+#contact-form .alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #dbf9db;
+    color: #345a52;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
 #about:before {
     content: "About";
 }

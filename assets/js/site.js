@@ -40,6 +40,7 @@ $(document).ready(function (){
 
     $(window).scroll();
 
+    /* Contact Form */
     $('#contact-form').submit(function (e) {
 
         e.preventDefault();
@@ -56,15 +57,38 @@ $(document).ready(function (){
                     return $('#message').val();
                 }
             },
-            success: function (data) {
+            complete: function() {
+
                 $('#contact-form input, #contact-form textarea').val('');
                 $('.send-button').removeClass('processing').find('span').text('Send');
-            },
-            error: function (error) {
-                console.log(error)
+
+
+                showAlert('Message sent successfully');
+
             }
         });
 
     });
+
+    function showAlert(message) {
+
+        $('#contact-form .alert').remove();
+
+        $('#contact-form').append(`
+            <div class="alert success" style="display: none">
+                <svg width="16" height="16" viewBox="0 0 78.369 78.369" fill="currentColor">
+                    <path d="M78.049,19.015L29.458,67.606c-0.428,0.428-1.121,0.428-1.548,0L0.32,40.015c-0.427-0.426-0.427-1.119,0-1.547l6.704-6.704 c0.428-0.427,1.121-0.427,1.548,0l20.113,20.112l41.113-41.113c0.429-0.427,1.12-0.427,1.548,0l6.703,6.704 C78.477,17.894,78.477,18.586,78.049,19.015z" fill="inherit" />
+                </svg>
+                ${message}
+            </div>
+        `);
+
+        $('#contact-form .alert').fadeIn();
+
+        setTimeout(function () {
+            $('#contact-form .alert').fadeOut();
+        }, 2000);
+
+    }
 
 });
