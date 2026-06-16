@@ -1,6 +1,6 @@
 export const site = {
   name: 'Bilal Bentoumi',
-  role: 'Full-Stack Engineer',
+  role: 'Software Engineer',
   tagline:
     'I design and build fast, accessible web products — where thoughtful interfaces meet resilient systems.',
   location: 'Algiers, Algeria',
@@ -27,7 +27,7 @@ export const socials = [
 export const about = {
   lead: 'I build for the web — end to end.',
   paragraphs: [
-    "I'm a full-stack engineer who enjoys living at the seam between design and infrastructure. I care about the details users feel — a snappy interaction, an honest loading state, a layout that doesn't break — and the ones they never see, like clean data models and observable services.",
+    "I'm a software engineer who enjoys living at the seam between design and infrastructure. I care about the details users feel — a snappy interaction, an honest loading state, a layout that doesn't break — and the ones they never see, like clean data models and observable services.",
     'Today I work on web platforms at Talenteo, building and maintaining product features across the stack: React front-ends, typed APIs, and the tooling that keeps a small team shipping confidently.',
     'Before that I bounced between freelance product work and startup teams, which taught me to scope ruthlessly, write code other people can read, and ship things that actually reach users.',
     "Off the keyboard you'll find me chasing good coffee, tinkering with side projects that never quite finish, and reading more sci-fi than is strictly reasonable.",
@@ -58,7 +58,7 @@ export type Job = {
 export const experience: Job[] = [
   {
     period: '2023 — Present',
-    role: 'Full-Stack Engineer',
+    role: 'Software Engineer',
     company: 'Talenteo',
     url: 'https://talenteo.com',
     summary:
@@ -67,7 +67,7 @@ export const experience: Job[] = [
   },
   {
     period: '2021 — 2023',
-    role: 'Frontend Engineer',
+    role: 'Full-Stack Developer',
     company: 'Freelance',
     summary:
       'Partnered with startups and agencies to ship marketing sites, dashboards, and web apps. Owned projects end to end: scoping, design hand-off, implementation, and deployment.',
