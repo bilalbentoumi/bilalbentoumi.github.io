@@ -41,19 +41,21 @@ export default function Hero() {
         </a>
       </div>
 
-      <div className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-xs text-mute">
+      <div className="mt-12 flex flex-col gap-y-3 font-mono text-xs text-mute sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6 sm:gap-y-2">
         <span>📍 {site.location}</span>
         <span className="hidden h-3 w-px bg-line sm:block" />
-        {socials.map((s) => (
-          <a
-            key={s.label}
-            href={s.href}
-            target="_blank"
-            rel="noreferrer"
-            className="transition-colors hover:text-cloud">
-            {s.label}
-          </a>
-        ))}
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+          {socials.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noreferrer"
+              className="transition-colors hover:text-cloud">
+              {s.label}
+            </a>
+          ))}
+        </div>
       </div>
 
       <a

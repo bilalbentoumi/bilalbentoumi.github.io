@@ -4,7 +4,7 @@ export const site = {
   tagline:
     'I design and build fast, accessible web products — where thoughtful interfaces meet resilient systems.',
   location: 'Algiers, Algeria',
-  email: 'bilal.bentoumi@talenteo.com',
+  email: 'bilalbentoumi@gmail.com',
   resumeUrl: '/resume.pdf',
 } as const;
 
@@ -18,10 +18,9 @@ export const nav: NavItem[] = [
 ];
 
 export const socials = [
-  { label: 'GitHub', href: 'https://github.com' },
-  { label: 'LinkedIn', href: 'https://linkedin.com' },
-  { label: 'X', href: 'https://x.com' },
-  { label: 'Email', href: 'mailto:bilal.bentoumi@talenteo.com' },
+  { label: 'GitHub', href: 'https://github.com/bilalbentoumi' },
+  { label: 'LinkedIn', href: 'https://linkedin.com/in/bilalbentoumi' },
+  { label: 'Email', href: `mailto:${site.email}` },
 ];
 
 export const about = {

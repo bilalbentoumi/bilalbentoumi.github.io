@@ -48,9 +48,14 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-40 transition-colors duration-300 ${
         scrolled
-          ? 'border-b border-line bg-ink/70 backdrop-blur-xl'
+          ? 'border-b border-line bg-ink/70'
           : 'border-b border-transparent'
       }`}>
+      <div
+        className={`pointer-events-none absolute inset-0 -z-10 backdrop-blur-xl transition-opacity duration-300 ${
+          scrolled ? 'opacity-100' : 'opacity-0'
+        }`}
+      />
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 sm:px-10">
         <a
           href="#top"
