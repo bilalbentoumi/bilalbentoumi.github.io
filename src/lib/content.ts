@@ -56,29 +56,22 @@ export type Job = {
 
 export const experience: Job[] = [
   {
-    period: '2023 — Present',
+    period: 'Jun 2022 — Present',
     role: 'Software Engineer',
     company: 'Talenteo',
     url: 'https://talenteo.com',
     summary:
-      'Build and maintain core product features across the stack — from React interfaces and a design-system component library to typed REST services and background jobs. Lead front-end architecture decisions and mentor on accessibility and testing.',
-    stack: ['TypeScript', 'React', 'Next.js', 'Node.js', 'PostgreSQL'],
+      'Build and maintain a SaaS HR platform that centralizes and secures employee data — tracking working hours, leave, and attendance — across the stack as part of a 10-person team serving 50+ clients. Work alongside the Product Owner, QA, and DevOps under Agile, shipping responsive React UIs, RESTful API integrations, MySQL query optimizations, and a Redis-backed background job system.',
+    stack: ['React', 'Material UI', 'REST API', 'MySQL', 'Redis', 'PHP'],
   },
   {
-    period: '2021 — 2023',
-    role: 'Full-Stack Developer',
-    company: 'Freelance',
+    period: 'Aug 2020 — Jun 2022',
+    role: 'Full-Stack Web Developer',
+    company: 'Emploitic',
+    url: 'https://emploitic.com',
     summary:
-      'Partnered with startups and agencies to ship marketing sites, dashboards, and web apps. Owned projects end to end: scoping, design hand-off, implementation, and deployment.',
-    stack: ['React', 'Vue', 'Tailwind CSS', 'Figma', 'Vercel'],
-  },
-  {
-    period: '2020 — 2021',
-    role: 'Junior Web Developer',
-    company: 'Local Studio',
-    summary:
-      'Built and styled responsive client websites and internal tools. Cut my teeth on real production code, code review, and shipping under deadlines.',
-    stack: ['JavaScript', 'PHP', 'MySQL', 'SCSS'],
+      'Built dynamic, responsive features alongside the project manager, designers, and QA team. Shipped front-end and back-end functionality, partnered with UI/UX designers on intuitive interfaces, and resolved bugs to improve application stability — all within an Agile workflow.',
+    stack: ['JavaScript', 'PHP', 'MySQL', 'HTML', 'CSS'],
   },
 ];
 
@@ -141,6 +134,54 @@ export const projects: Project[] = [
       'A lightweight live-TV browser with channel guide, favorites, and offline-friendly caching for flaky connections.',
     tags: ['React', 'PWA', 'IndexedDB'],
     href: '#',
+    accent: 'mint',
+  },
+  {
+    title: 'Hanoot',
+    blurb:
+      'An online marketplace for buying and selling used items, with listings, search, and messaging between buyers and sellers.',
+    tags: ['React', 'Marketplace'],
+    href: 'https://www.hanoot.app',
+    accent: 'violet',
+  },
+  {
+    title: 'Halteverbote Frankfurt',
+    blurb:
+      'A booking platform for reserving no-parking zones for moving trucks across Frankfurt.',
+    tags: ['Next.js', 'Vercel', 'Booking'],
+    href: 'https://clearway.vercel.app',
+    accent: 'cyan',
+  },
+  {
+    title: 'AK Gebäudereinigung',
+    blurb:
+      'A marketing site for a German building-cleaning company, presenting services and capturing booking enquiries.',
+    tags: ['Next.js', 'Vercel'],
+    href: 'https://ak-services-three.vercel.app',
+    accent: 'mint',
+  },
+  {
+    title: 'AirClean VS',
+    blurb:
+      'A marketing site for a professional cleaning services company, showcasing offerings and contact options.',
+    tags: ['Next.js', 'Vercel'],
+    href: 'https://air-clean-one.vercel.app',
+    accent: 'violet',
+  },
+  {
+    title: 'PeerHealth',
+    blurb:
+      'A landing site for a health and peer-support service, presenting its mission and onboarding visitors.',
+    tags: ['Next.js', 'Vercel'],
+    href: 'https://peer-health.vercel.app',
+    accent: 'cyan',
+  },
+  {
+    title: 'Kabelbrücken Rent',
+    blurb:
+      'A site for renting cable-bridge ramps and cable protectors for events and worksites in Germany.',
+    tags: ['Next.js', 'Web'],
+    href: 'https://kabelbruecke-rent.de',
     accent: 'mint',
   },
 ];

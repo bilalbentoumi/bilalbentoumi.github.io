@@ -56,6 +56,7 @@ export default function Experience() {
       <Reveal delay={120}>
         <a
           href={site.resumeUrl}
+          target="_blank"
           className="mt-4 inline-flex items-center gap-2 font-mono text-sm text-cloud transition-colors hover:text-violet">
           View full résumé
           <span aria-hidden>↗</span>

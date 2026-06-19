@@ -93,6 +93,7 @@ export default function Header() {
 
         <a
           href={site.resumeUrl}
+          target="_blank"
           className="hidden rounded-full border border-line px-4 py-2 text-sm text-fog transition-colors hover:border-violet/60 hover:text-cloud md:inline-block">
           Résumé
         </a>
@@ -140,6 +141,7 @@ export default function Header() {
         ))}
         <a
           href={site.resumeUrl}
+          target="_blank"
           onClick={() => setOpen(false)}
           className="mt-6 rounded-full border border-line px-6 py-3 text-fog">
           Résumé
